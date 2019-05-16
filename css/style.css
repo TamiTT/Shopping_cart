@@ -20,6 +20,14 @@ color: blue;
   height: 35%;
   margin-bottom: 20px;
 }
+
+.image_small {
+width: 5%;
+height: 5%;
+margin-bottom: 20px;
+}
+
+
 .text{
 color: white;
 }
