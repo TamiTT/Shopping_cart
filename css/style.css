@@ -1,0 +1,37 @@
+@media (min-width: 420px) {
+  .main-titel {
+    font-size: 40px;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 800px;
+    font-family: sans-serif;
+    background-color: black;
+    /* display: inline-block; */
+  }
+ .is-selected {
+color: blue;
+
+ }
+
+  .image {
+  width: 35%;
+  height: 35%;
+  margin-bottom: 20px;
+}
+.text{
+color: white;
+}
+
+.both {
+display: flex;
+flex-direction: row;
+
+
+
+}
+.slider {
+  background-color: blue;
+  width: 150px;
+}
