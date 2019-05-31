@@ -16,7 +16,15 @@ button {
   display: inline-block;
 }
 
+h1 {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 7em;
+  margin: 0.2em;
+  position: relative;
 
+
+}
 .container {
   font-family: sans-serif;
   /* background-color: black; */
@@ -83,7 +91,8 @@ body {
 
 .column:not(.is-expanded) {
   font-size: 0px;
-  background-color: rgb(215, 43, 26);
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  /* background-color: rgb(215, 43, 26); */
 
 
 }
