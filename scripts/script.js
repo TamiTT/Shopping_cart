@@ -49,4 +49,6 @@ $(document).ready(function() {
     $itemToReveal.removeClass('is-hidden');
 
   });
+
+  
 });

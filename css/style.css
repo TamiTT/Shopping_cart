@@ -1,11 +1,21 @@
-/* @media (min-width: 420px) {
-  .main-titel {
-    font-size: 40px;
-  } */
+
 button {
   margin: 4em 0;
   padding: 1em 3em;
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  padding: 10px 40px;
+  border-radius:6px;
+  font-weight: 80;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
 }
+
 
 .container {
   font-family: sans-serif;
@@ -20,6 +30,7 @@ button {
   width: 20%;
   height: 20%;
   margin-bottom: 20px;
+  margin-top: 2em;
 }
 
 .image_small {
@@ -57,6 +68,7 @@ body {
 .column--center {
   opacity: 1;
   background-color: rgb(48, 72, 100);
+    background: linear-gradient(105deg, #ffad2f 60%, #ffed4b 60%);
 }
 
 .column--right {
@@ -66,11 +78,14 @@ body {
 .column.is-expanded {
   flex-shrink: 0;
   flex-basis: calc(100vw - 5em);
+
 }
 
 .column:not(.is-expanded) {
   font-size: 0px;
-  background-color: rgb(74, 218, 236);
+  background-color: rgb(215, 43, 26);
+
+
 }
 
 .column ul {
@@ -83,9 +98,7 @@ body {
   border-radius: 4px;
   width: 100%;
   min-height: 150px;
-  margin-top: 20px;
   padding: 20px;
-  /* Adjusts the box model to behave like we want it to: */
   box-sizing: border-box;
 }
 
