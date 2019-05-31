@@ -23,31 +23,30 @@ $(document).ready(function() {
     addClass($targetColumn);
     // columns.removeClass('is-expanded');
   }
-  
+
   columns.click(handleClick);
 
+var $buttons = $('js-button');
+  console.log('$buttons:', $buttons);
 
 
-      // $(event.target).closest('.column');
-      //  $targetColumn.addClass('is-expanded');
-    // });
+
+
+$('.js-button').click(function(event) {
+    $button = $(event.target);
+
+    // change the buttons text
+    $button.text('Added');
+
+    // get data attribute to revel correct item in cart
+    var itemName = $button.attr('data-item');
+    console.log('itemName: ', itemName);
+
+    // get the right item to reveal
+    var $itemToReveal = $('#' + itemName);
+    console.log('$itemToReveal: ', $itemToReveal);
+
+    $itemToReveal.removeClass('is-hidden');
+
+  });
 });
-
-	//   console.log('columns: ', columns);
-  //
-	//   // looping over all columns (inside of HTML collection)
-	//   // Using ECMAScript 6, older browsers need other solutions
-	//   for (var column of columns) {
-	//     column.addEventListener('click', function(event) {
-	//       // remove is-expanded class from all elements
-	//       // to do so, we loop over each item again
-	//       for (var col of columns) {
-	//         col.classList.remove('is-expanded');
-	//       }
-	//       // the event.target referts to the clicked item
-	//       console.log('event.target: ', event.target);
-  //       $(event.target).parents().find('column')
-	//       event.target.classList.add('is-expanded');
-	//     });
-	//   }
-  // });
