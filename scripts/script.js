@@ -4,11 +4,11 @@ $(document).ready(function() {
   var columns = $('.column');
   console.log('columns:', columns);
 
-  function removeClass () {
+  function removeClass() {
     columns.removeClass('is-expanded');
   }
 
-  function addClass (column) {
+  function addClass(column) {
     column.addClass('is-expanded');
   }
 
@@ -26,13 +26,13 @@ $(document).ready(function() {
 
   columns.click(handleClick);
 
-var $buttons = $('js-button');
+  var $buttons = $('js-button');
   console.log('$buttons:', $buttons);
 
 
 
 
-$('.js-button').click(function(event) {
+  $('.js-button').click(function(event) {
     $button = $(event.target);
 
     // change the buttons text
